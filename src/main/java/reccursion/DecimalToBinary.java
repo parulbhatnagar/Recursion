@@ -1,3 +1,5 @@
+package reccursion;
+
 public class DecimalToBinary {
 
     public static String  toBinary(int num){

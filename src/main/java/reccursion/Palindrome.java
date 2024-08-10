@@ -1,3 +1,5 @@
+package reccursion;
+
 public class Palindrome {
 
     public static boolean checkPalindrome(String s){

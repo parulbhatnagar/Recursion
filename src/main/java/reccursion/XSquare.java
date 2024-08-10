@@ -1,3 +1,5 @@
+package reccursion;
+
 public class XSquare {
 
     public static void main(String[] args) {

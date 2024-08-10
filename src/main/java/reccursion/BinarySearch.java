@@ -1,3 +1,5 @@
+package reccursion;
+
 public class BinarySearch {
 
     // Assumption here is that list of array that we will get will be a sorted one
