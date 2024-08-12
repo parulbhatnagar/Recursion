@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.hareandtortoise;
 
 public class HareTurtle {
 
