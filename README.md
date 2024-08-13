@@ -1,1 +1,2 @@
-**All the code algos resolved with recusion**
+DSA and ALGO for different leetcode problems
+
