@@ -49,6 +49,8 @@ public class ReverseLinkedListSubset {
         ListNode leftMinus1 = null;
         ListNode leftNode = null;
         int currentPosition = 0;
+        if (head==null || head.next==null || left == right){
+            return head;}
         while (curr!=null){
             currentPosition++;
             // 1.  move till left-1 and store the node as this next will point to the
@@ -61,8 +63,9 @@ public class ReverseLinkedListSubset {
                 leftMinus1 = prev;
                 leftNode = curr;
             }
-            if(currentPosition== right){
-                leftMinus1.next= curr;
+            if(currentPosition== right ){
+                if (leftMinus1!=null){
+                    leftMinus1.next= curr;}
                 leftNode.next = curr.next;
             }
             if (currentPosition>= left && currentPosition<=right){
@@ -79,6 +82,10 @@ public class ReverseLinkedListSubset {
             // 2. from left till right current position reverse linked list
             // 3.point the ones identified in step 1
         }
+        if (left == 1){
+            //this means head is also changed to right node
+            return prev;
+        }
         return head;
     }
 
@@ -93,7 +100,7 @@ public class ReverseLinkedListSubset {
 
         printList(node1);
 
-        ListNode reversed = reverseBetween(node1,3,5);
+        ListNode reversed = reverseBetween(node1,2,7);
 
         printList(reversed);
     }
